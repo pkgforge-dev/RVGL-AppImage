@@ -5,6 +5,6 @@ Name=RVGL Launcher
 Type=Application
 Categories=Game;Racing;
 #Path=/home/acer/Downloads/rvgl_launcher_linux
-Exec=python3 rvgl_launcher.py
+Exec=rvgl_launcher.py
 Icon=rvgl
 StartupWMClass=
