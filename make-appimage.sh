@@ -12,7 +12,7 @@ export DEPLOY_OPENGL=1
 export DEPLOY_PYTHON=1
 
 # Deploy dependencies
-quick-sharun /PATH/TO/BINARY_AND_LIBRARIES_HERE
+quick-sharun /usr/bin/python3 ./AppDir/bin/rvgl_launcher.py
 
 # Additional changes can be done in between here
 
