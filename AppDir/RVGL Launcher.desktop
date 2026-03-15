@@ -1,0 +1,9 @@
+[Desktop Entry]
+Comment=Launcher and package manager for RVGL
+Terminal=false
+Name=RVGL Launcher
+Type=Application
+Categories=Game;Racing;
+Exec=rvgl_launcher.py
+Icon=rvgl
+StartupWMClass=rvgl_launcher.py
