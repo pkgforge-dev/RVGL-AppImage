@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/RVGL-AppImage)](https://github.com/pkgforge-dev/RVGL-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/pkgforge-dev.png" width="128" />
+  <img src="https://github.com/Link4Electronics/RVGL-AppImage/blob/main/bin/rvgl.png" width="128" />
 </p>
 
 
