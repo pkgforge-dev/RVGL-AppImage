@@ -13,7 +13,7 @@ export DEPLOY_OPENGL=1
 export DEPLOY_PYTHON=1
 
 # Deploy dependencies
-quick-sharun ./AppDir/bin/rvgl_launcher.py
+quick-sharun ./AppDir/bin/* #./AppDir/bin/rvgl_launcher.py
 
 # Additional changes can be done in between here
 
