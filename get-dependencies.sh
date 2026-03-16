@@ -13,6 +13,7 @@ pacman -Syu --noconfirm \
     python           \
     python-packaging \
     python-requests  \
+    python-wxpython  \
     sdl2
 
 echo "Installing debloated packages..."
