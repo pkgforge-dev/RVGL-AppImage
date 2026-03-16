@@ -8,6 +8,8 @@ echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     enet             \
+    flac             \
+    fluidsynth       \
     gtk3             \
     libdecor         \
     openal           \
