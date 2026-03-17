@@ -12,7 +12,6 @@ pacman -Syu --noconfirm \
     fluidsynth       \
     gtk3             \
     libdecor         \
-    libvorbis        \
     openal           \
     python           \
     python-packaging \
