@@ -12,6 +12,7 @@ pacman -Syu --noconfirm \
     gtk3             \
     libdecor         \
     openal           \
+    p7zip            \
     python           \
     python-packaging \
     python-requests  \
