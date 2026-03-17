@@ -17,8 +17,8 @@
 
 </div>
 
-### ⚠️ Launcher has issues extracting assets, not AppImage fault, need to manually extract *.zip files from `.local/share/rvmm/downloads` to `.local/share/rvmm/packs` ⚠️
-Correct directory structure of `.local/share/rvmm` for game to work
+### ⚠️ Launcher has issues extracting assets, not AppImage fault, need to manually extract *.zip files from `~/.local/share/rvmm/downloads` to `~/.local/share/rvmm/packs` ⚠️
+Correct directory structure of `~/.local/share/rvmm` for game to work
 
     rvmm/
     |--packs/
