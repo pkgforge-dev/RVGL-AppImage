@@ -17,18 +17,6 @@
 
 </div>
 
-### ⚠️ Launcher has issues extracting assets, not AppImage fault, need to manually extract *.zip files from `~/.local/share/rvmm/downloads` to `~/.local/share/rvmm/packs` ⚠️
-Correct directory structure of `~/.local/share/rvmm` for game to work
-
-    rvmm/
-    |--packs/
-    |  |--game_files/
-    |  |--rvgl_assets/
-    |  |--rvgl_dcpack/
-    |  |--rvgl_linux/
-    |  |--soundtrack/
-    |     |--redbook/
-
 ---
 
 AppImage made using [sharun](https://github.com/VHSgunzo/sharun) and its wrapper [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
