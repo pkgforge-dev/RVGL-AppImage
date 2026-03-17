@@ -7,12 +7,12 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
+    7zip             \
     enet             \
     fluidsynth       \
     gtk3             \
     libdecor         \
     openal           \
-    p7zip            \
     python           \
     python-packaging \
     python-requests  \
