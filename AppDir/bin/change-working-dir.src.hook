@@ -1,9 +1,7 @@
 #!/bin/false
-ARCH=APPIMAGE_ARCH
-
 dir=${XDG_DATA_HOME:-~/.local/share}/rvmm
 mkdir -p "$dir"/packs/rvgl_linux
-case "$ARCH" in # they use 64 and arm64
+case "$APPIMAGE_ARCH" in # they use 64 and arm64
 	x86_64)  farch=64;;
 	aarch64) farch=arm64;;
 esac
