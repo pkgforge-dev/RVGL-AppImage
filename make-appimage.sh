@@ -14,7 +14,6 @@ export DEPLOY_PYTHON=1
 
 # Deploy dependencies
 quick-sharun ./AppDir/bin/* /usr/lib/7zip/*
-cp /usr/lib/7zip/7z.so ./AppDir/bin
 
 # Additional changes can be done in between here
 
