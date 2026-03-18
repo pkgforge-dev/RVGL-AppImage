@@ -35,11 +35,10 @@ wget https://distribute.re-volt.io/packs/rvgl_linux.zip
 
 mkdir -p ./AppDir/bin
 bsdtar -xvf rvgl_launcher_linux.zip -C ./AppDir/bin
-if [ "$ARCH" = "x86_64" ]; then
-    bsdtar -xvf rvgl_linux.zip -C ./AppDir/bin rvgl.64
-    bsdtar -xvf rvgl_linux.zip -C /usr/lib --strip-components 2 lib/lib64/libunistring.so.2
-else
-    bsdtar -xvf rvgl_linux.zip -C ./AppDir/bin rvgl.arm64
-    bsdtar -xvf rvgl_linux.zip -C /usr/lib --strip-components 2 lib/libarm64/libunistring.so.2
-fi
+case "$ARCH" in # they use 64 and arm64
+	x86_64)  farch=64;;
+	aarch64) farch=arm64;;
+esac
+bsdtar -xvf rvgl_linux.zip -C ./AppDir/bin rvgl.${farch}
+bsdtar -xvf rvgl_linux.zip -C /usr/lib --strip-components 2 lib/lib${farch}/libunistring.so.2
 rm -rf ./AppDir/bin/icons
