@@ -1,5 +1,5 @@
 #!/bin/false
-ARCH=$(uname -m)
+ARCH=APPIMAGE_ARCH
 
 dir=${XDG_DATA_HOME:-~/.local/share}/rvmm
 mkdir -p "$dir"/packs/rvgl_linux
