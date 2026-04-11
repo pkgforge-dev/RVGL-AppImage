@@ -1,4 +1,4 @@
-#!/bin/false
+#!/bin/sh
 if [ ! -x /bin/bash ]; then
     notify -de "ERROR: This game requires /bin/bash which is not present in this system!"
     exit 1
