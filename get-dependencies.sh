@@ -28,6 +28,12 @@ get-debloated-pkgs --add-common --prefer-nano
 echo "Getting app..."
 echo "---------------------------------------------------------------"
 wget https://rvgl.org/downloads/rvgl_launcher_linux.zip
+wget https://distribute.re-volt.io/packs/rvgl_linux.zip
 
 mkdir -p ./AppDir/bin
 bsdtar -xvf rvgl_launcher_linux.zip -C ./AppDir/bin
+case "$ARCH" in # they use 64 and arm64
+	x86_64)  farch=64;;
+	aarch64) farch=arm64;;
+esac
+bsdtar -xvf rvgl_linux.zip -C /usr/lib --strip-components 2 lib/lib${farch}/libunistring.so.2
