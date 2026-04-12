@@ -14,9 +14,12 @@ export DEPLOY_OPENGL=1
 export DEPLOY_PYTHON=1
 
 # Deploy dependencies
-quick-sharun ./AppDir/bin/* /usr/lib/7zip/*
+quick-sharun ./AppDir/bin/* /usr/lib/7zip/* /usr/bin/env
 
 # Additional changes can be done in between here
+cc -shared -fPIC -O2 -o ./AppDir/lib/execve-sharun-hack.so execve-sharun-hack.c -ldl
+echo 'execve-sharun-hack.so' >> ./AppDir/.preload
+echo 'export ANYLINUX_EXECVE_WRAP_PATHS="$DATADIR"' >> ./AppDir/bin/execve-wrap-path.hook
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
