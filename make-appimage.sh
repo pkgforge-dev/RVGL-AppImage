@@ -14,7 +14,7 @@ export DEPLOY_OPENGL=1
 export DEPLOY_PYTHON=1
 
 # Deploy dependencies
-quick-sharun ./AppDir/bin/* /usr/lib/7zip/* /usr/bin/env
+quick-sharun ./AppDir/bin/* /usr/lib/7zip/* /usr/lib/libSDL2_image-2.0.so* /usr/lib/libSDL2-2.0.so* /usr/lib/libenet.so* /usr/lib/libopenal.so* /usr/bin/env
 
 # Additional changes can be done in between here
 cc -shared -fPIC -O2 -o ./AppDir/lib/execve-sharun-hack.so execve-sharun-hack.c -ldl
