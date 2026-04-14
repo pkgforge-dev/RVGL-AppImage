@@ -1,5 +1,5 @@
 #!/bin/sh
-dir=${XDG_DATA_HOME:-~/.local/share}/rvmm
+dir=$DATADIR/rvmm
 mkdir -p "$dir"/packs/rvgl_linux
 case "$APPIMAGE_ARCH" in # they use 64 and arm64
 	x86_64)  farch=64;;
