@@ -16,8 +16,6 @@ export DEPLOY_PYTHON=1
 # Deploy dependencies
 quick-sharun ./AppDir/bin/* /usr/lib/7zip/*
 
-# Additional changes can be done in between here
-
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
 
