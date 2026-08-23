@@ -22,7 +22,6 @@ get-debloated-pkgs --add-common --prefer-nano libdecor-mini sdl2_image-mini
 # Comment this out if you need an AUR package
 #make-aur-package flac1.4
 
-# If the application needs to be manually built that has to be done down here
 echo "Getting app..."
 echo "---------------------------------------------------------------"
 wget https://rvgl.org/downloads/rvgl_launcher_linux.zip
