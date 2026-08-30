@@ -14,7 +14,7 @@ export DEPLOY_OPENGL=1
 export DEPLOY_PYTHON=1
 
 # Deploy dependencies
-quick-sharun ./AppDir/bin/* /usr/lib/7zip/*
+quick-sharun ./AppDir/bin/* /usr/lib/7zip/* /usr/lib/libopenal.so*
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
