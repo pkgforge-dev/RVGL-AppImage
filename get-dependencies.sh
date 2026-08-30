@@ -10,7 +10,6 @@ pacman -Syu --noconfirm \
     enet             \
     fluidsynth       \
     openal           \
-    python           \
     python-packaging \
     python-requests  \
     python-wxpython
